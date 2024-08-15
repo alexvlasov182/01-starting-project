@@ -1,10 +1,10 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default function TabButton({ children }) {
+export default function TabButton({ children, onSelect }) {
     return (
         <li>
-            <button>{children}</button>
+            <button onClick={onSelect}>{children}</button>
         </li>
     );
 }
